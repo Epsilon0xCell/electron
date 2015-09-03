@@ -14,7 +14,7 @@ namespace atom {
 class BridgeTaskRunner : public base::SingleThreadTaskRunner {
  public:
   BridgeTaskRunner() {}
-  ~BridgeTaskRunner() {}
+  ~BridgeTaskRunner() override {}
 
   // base::SingleThreadTaskRunner:
   bool PostDelayedTask(const tracked_objects::Location& from_here,
