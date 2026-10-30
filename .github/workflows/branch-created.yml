@@ -114,7 +114,7 @@ jobs:
           GITHUB_TOKEN: ${{ steps.generate-token.outputs.token }}
       - name: Find Previous Release Project Board
         if: ${{ steps.check-major-version.outputs.MAJOR }}
-        uses: dsanders11/project-actions/find-project@438b25e007c2f4efec324497fadc6402e7cc61a6 # v1.4.0
+        uses: dsanders11/project-actions/find-project@d5490cb5784c8570b072fbf02f974fd5ee3e145f # v2.1.0
         id: find-prev-release-board
         with:
           title: ${{ steps.generate-project-metadata.outputs.prev-prev-major }}-x-y
